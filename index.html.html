@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-sky-700">
+  <div class="container bg-opacity-80 px-10 lg:px-40 mx-auto bg-black px-4">
+    <div class="flex items-center justify-between h-20">
+      <!-- Logo -->
+      <a href="/" class="flex items-center space-x-2">
+        <div class="text-white font-bold text-2xl tracking-wider">
+          <span class="text-sky-400">N</span>
+          <span class="text-white">A</span>
+        </div>
+        <div class="text-white text-sm font-light tracking-widest">
+          NIXON ARABIA
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden lg:flex items-center space-x-8">
+        <a href="/" class="text-white hover:text-sky-400 transition-colors">HOME</a>
+        <a href="#about" class="text-white hover:text-sky-400 transition-colors">ABOUT</a>
+        <a href="#services" class="text-white hover:text-sky-400 transition-colors">SERVICES</a>
+        <a href="#projects" class="text-white hover:text-sky-400 transition-colors">PROJECTS</a>
+        <a href="#careers" class="text-white hover:text-sky-400 transition-colors">CAREERS</a>
+        <a href="#contact" class="text-white hover:text-sky-400 transition-colors">CONTACT</a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" class="lg:hidden text-white hover:text-sky-400 focus:outline-none">
+        <!-- Menu Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" id="menu-icon" class="w-6 h-6 block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+        <!-- X Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" id="close-icon" class="w-6 h-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div id="mobile-menu" class="hidden lg:hidden py-4 border-t border-white/20">
+      <nav class="flex flex-col space-y-4">
+        <a href="/" class="text-white hover:text-sky-400 transition-colors">HOME</a>
+        <a href="#about" class="text-white hover:text-sky-400 transition-colors">ABOUT</a>
+        <a href="#services" class="text-white hover:text-sky-400 transition-colors">SERVICES</a>
+        <a href="#projects" class="text-white hover:text-sky-400 transition-colors">PROJECTS</a>
+        <a href="#careers" class="text-white hover:text-sky-400 transition-colors">CAREERS</a>
+        <a href="#contact" class="text-white hover:text-sky-400 transition-colors">CONTACT</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+
+
+<script>
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const menuIcon = document.getElementById("menu-icon");
+  const closeIcon = document.getElementById("close-icon");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+    menuIcon.classList.toggle("hidden");
+    closeIcon.classList.toggle("hidden");
+  });
+</script>
+
+
+    <!-- Main Content -->
+    <main class="flex-grow ">
+      <!-- Hero Section -->
+  <section 
+  class="relative min-h-screen bg-gray-800 flex items-end py-10 lg:py-20 justify-center bg-cover bg-center bg-no-repeat" 
+  style="background-image: url('./bg.jpg')"
+>
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-transparent"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 container px-10 lg:px-40 mx-auto">
+    <div class="max-w-4xl">
+      <h1 class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
+        NIXON ARABIA <br />
+        <span class="text-sky-300">INTEGRATED SOLUTIONS</span> <br />
+        FOR A SUSTAINABLE FUTURE
+      </h1>
+
+      <p class="text-lg text-white/90 mb-8 max-w-3xl leading-relaxed">
+        Delivering excellence across Diving & Marine, Construction, Maintenance, 
+        Supply, Rental, and Fiber Product Fabrication with a commitment to 
+        quality, safety, and innovation.
+      </p>
+
+      <a 
+        href="#about" 
+        class="inline-flex items-center px-6 py-3 text-lg font-medium text-sky-500 border border-sky-500 rounded-lg hover:bg-sky-500 hover:text-white transition-all duration-300 group"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" 
+             class="w-5 h-5 mr-2 transition-transform group-hover:translate-x-1" 
+             fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                d="M9 5l7 7-7 7"/>
+        </svg>
+        Learn More
+      </a>
+    </div>
+  </div>
+</section>
+
+
+      <!-- About Section -->
+  <section class="py-20 bg-gray-200 relative overflow-hidden">
+  <!-- Background geometric element -->
+  <div class="absolute top-0 right-0 w-1/3 h-full">
+    <div class="w-full h-full bg-gradient-to-l from-sky-300/10 to-transparent transform skew-x-12 translate-x-1/4"></div>
+  </div>
+
+  <div class="container mx-auto px-4 relative z-10">
+    <div class="max-w-3xl mx-auto text-center">
+      <!-- Heading -->
+      <div class="mb-8">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+          ABOUT <span class="text-sky-500">NIXON ARABIA</span>
+        </h2>
+        <div class="w-20 h-1 bg-sky-500 mx-auto"></div>
+      </div>
+
+      <!-- Paragraphs -->
+      <div class="space-y-6 text-lg md:text-xl text-gray-700 leading-relaxed mb-12">
+        <p class="text-start">
+          At <strong>Nixon Arabia</strong>, we are committed to delivering excellence across marine, 
+          construction, maintenance, supply, rental, and fabrication services. 
+        </p>
+
+        <p class="text-base text-start">
+          With a strong foundation built on quality, safety, and innovation, we provide 
+          end-to-end solutions that meet the diverse needs of our clients across industries.
+        </p>
+
+        <p class="text-base text-start">
+          Our expertise spans Diving & Marine Services, Infrastructure Development, 
+          Mechanical & Electrical Solutions, Proactive Maintenance, Supply & Rental, 
+          and Fiber Product Fabrication. We deliver with precision, durability, 
+          and compliance with international standards.
+        </p>
+      </div>
+
+      <!-- Button -->
+      <a 
+        href="#services"
+        class="inline-flex items-center px-6 py-3 bg-white border shadow shadow-sky-500 text-lg font-medium border border-sky-500 text-sky-500 hover:bg-sky-500 hover:text-white transition-all duration-300 group rounded-lg"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" 
+             class="w-5 h-5 mr-2 transition-transform group-hover:translate-x-1" 
+             fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                d="M9 5l7 7-7 7"/>
+        </svg>
+        Explore Our Services
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+      <!-- Business Units Section -->
+<section 
+  class="py-20 bg-cover bg-center flex items-end px-10 lg:px-40 bg-no-repeat bg-gray-700  relative"
+  style="background-image: url('./bg.jpg')"
+>
+  <!-- Dark overlay -->
+  <div class="absolute inset-0 bg-black/10"></div>
+ <div class="min-h-screen flex items-end">
+  <div class="container  mx-auto relative z-10 bg-gray-900/70 px-10 md:px-20 py-8 rounded-3xl">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+      
+      <!-- Logo placeholder -->
+      <div class="border border-white/20 rounded-lg p-8 bg-white/5 backdrop-blur-sm text-center">
+        <div class="text-white font-bold text-2xl tracking-wider">
+          <span class="text-sky-400">N</span>
+          <span class="text-white">A</span>
+        </div>
+        <div class="text-white text-sm font-light tracking-widest mt-1">
+          NIXON ARABIA
+        </div>
+      </div>
+
+      <!-- Left side - Service Info -->
+      <div class="space-y-8 col-span-2">
+        <div>
+          <p class="text-white/80 text-sm font-medium tracking-wider mb-2">OUR SERVICES</p>
+          <h2 class="text-xl md:text-2xl font-bold text-white mb-3">
+            Comprehensive Industry Solutions
+          </h2>
+          <p class="text-white/90 text-base leading-relaxed mb-3">
+            Nixon Arabia delivers end-to-end solutions across multiple industries, 
+            combining advanced technology, highly trained professionals, 
+            and international best practices. From marine operations to 
+            infrastructure, maintenance, supply, rental, and fiber fabrication, 
+            we ensure precision, durability, and compliance with global standards.
+          </p>
+
+          <!-- Button -->
+          <a 
+            href="#services"
+            class="inline-flex items-center py-2 text-lg font-medium text-sky-500 border border-sky-500 rounded-lg hover:bg-sky-500 hover:text-white transition-all duration-300 group"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" 
+                 class="w-5 h-5 mr-2 transition-transform group-hover:scale-110" 
+                 fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                    d="M14 3h7v7m0-7L10 14"/>
+            </svg>
+            View All Services
+          </a>
+        </div>
+      </div>
+
+      <!-- Right side - Service Categories -->
+      <div class="space-x-4 flex col-span-3">
+        <div class="p-4 rounded-lg bg-white/80 backdrop-blur-sm">
+          <span class="font-medium text-sky-700">Construction</span>
+        </div>
+        <div class="p-4 rounded-lg bg-white/5 backdrop-blur-sm hover:bg-white/10 transition">
+          <span class="text-white/90">Maintenance</span>
+        </div>
+        <div class="p-4 rounded-lg bg-white/5 backdrop-blur-sm hover:bg-white/10 transition">
+          <span class="text-white/90">Supply</span>
+        </div>
+        <div class="p-4 rounded-lg bg-white/5 backdrop-blur-sm hover:bg-white/10 transition">
+          <span class="text-white/90">Rental</span>
+        </div>
+        <div class="p-4 rounded-lg bg-white/5 backdrop-blur-sm hover:bg-white/10 transition">
+          <span class="text-white/90">Fiber Product Fabrication</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+</section>
+
+
+
+      <!-- Projects Section -->
+ <section class="py-20 bg-gray-300" id="projects">
+  <div class="container px-10 lg:px-40 mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      
+      <!-- Left side - Title and CTA -->
+      <div class="space-y-8">
+        <div>
+          <div class="w-16 h-1 bg-sky-500 mb-6"></div>
+          <h2 class="text-5xl md:text-6xl font-bold text-gray-800 mb-8">
+            FEATURED <br /> PROJECTS
+          </h2>
+
+          <a 
+            href="#"
+            class="inline-flex items-center px-6 py-3 text-lg font-medium rounded-lg border border-sky-500 text-sky-500 hover:bg-sky-500 hover:text-white transition-all duration-300 group"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" 
+                 class="w-5 h-5 mr-2 transition-transform group-hover:translate-x-1" 
+                 fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                    d="M9 5l7 7-7 7"/>
+            </svg>
+            See All Projects
+          </a>
+        </div>
+      </div>
+
+      <!-- Right side - Project Card -->
+      <div>
+        <div class="overflow-hidden border-0 shadow-xl hover:shadow-2xl transition-shadow duration-300 rounded-lg">
+          <div class="aspect-video bg-cover bg-center relative" style="background-image: url('/assets/project-marine.jpg')">
+            <div class="absolute inset-0 w-full h-full bg-gradient-to-t from-black/60 to-transparent"></div>
+          </div>
+          
+          <div class="p-8 bg-white">
+            <div class="mb-6">
+              <h3 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
+                Marine Infrastructure Development
+              </h3>
+              <p class="text-gray-600 mb-4">Regional Ports</p>
+
+              <div class="grid grid-cols-3 gap-6 text-sm">
+                <div>
+                  <p class="text-sky-500 font-medium mb-1">SECTOR</p>
+                  <p class="text-gray-700">Marine & Offshore</p>
+                </div>
+                <div>
+                  <p class="text-sky-500 font-medium mb-1">CLIENT</p>
+                  <p class="text-gray-700">Confidential</p>
+                </div>
+                <div>
+                  <p class="text-sky-500 font-medium mb-1">STATUS</p>
+                  <p class="text-gray-700">Completed</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-between">
+              <div class="text-gray-800 font-bold text-xl tracking-wider">
+                <span class="text-sky-500">N</span>
+                <span>A</span>
+                <span class="text-sm font-light tracking-widest ml-2">
+                  NIXON ARABIA
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Career Section -->
+<section 
+  class="py-20 bg-cover bg-center bg-no-repeat relative"
+  style="background-image: url('./career.png');"
+>
+  <!-- Dark overlay -->
+  <div class="absolute inset-0 bg-black/70"></div>
+  
+  <div class="container mx-auto px-4 md:px-10 lg:px-40 relative z-10">
+    <div class="max-w-2xl">
+      <h2 class="text-2xl md:text-4xl font-bold text-white mb-4 leading-tight">
+        JOIN <br />
+        <span class="text-sky-400">NIXON ARABIA</span> <br />
+        <span class="text-sky-400">CAREERS</span>
+      </h2>
+      
+      <p class="text-white/90 leading-relaxed mb-8 max-w-md">
+        Be part of a dynamic team that delivers world-class projects across multiple 
+        industries. At Nixon Arabia, we value talent, innovation, and commitment. 
+        Explore exciting opportunities in engineering, marine, construction, and more.
+      </p>
+      
+      <a 
+        href="#contact"
+        class="inline-flex items-center px-6 py-3 text-lg font-medium bg-sky-500 text-white hover:bg-sky-600 transition-all duration-300 group rounded-lg"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+        Apply Now
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+ <!-- Mission & Vision Section -->
+<section class="bg-white text-black relative overflow-hidden">
+  <!-- Background pattern -->
+  <div class="absolute inset-0 opacity-10">
+    <div class="absolute inset-0 bg-gradient-to-br from-sky-100 via-blue-50 to-transparent"></div>
+  </div>
+  
+  <div class="container mx-auto relative z-10">
+    <div class="grid grid-cols-1 lg:grid-cols-5 items-center">
+      
+      <!-- Left side - Visual placeholder -->
+      <div class="relative h-full col-span-2"  style="background-image: url('./bg-3.webp');">
+        <div class=" h-full  rounded-xl flex items-center justify-center p-10">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" class="w-20 h-20 text-sky-500 opacity-70" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+          </svg> -->
+        </div>
+      </div>
+      
+      <!-- Right side - Content -->
+      <div class="space-y-8 col-span-3 p-10 lg:p-20">
+        <div>
+          <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6 leading-tight">
+            OUR <span class="text-sky-500">MISSION</span> & <span class="text-sky-500">VISION</span>
+          </h2>
+          
+          <p class="text-gray-700 text-lg leading-relaxed mb-6">
+            <strong>Mission:</strong> To provide integrated solutions that empower industries, 
+            enhance communities, and ensure sustainable growth.
+          </p>
+
+          <p class="text-gray-700 text-lg leading-relaxed mb-6">
+            <strong>Vision:</strong> To be a trusted regional leader in multi-disciplinary services, 
+            recognized for innovation, reliability, and excellence.
+          </p>
+          
+          <a href="#about" class="inline-flex items-center px-6 py-3 text-lg font-medium bg-sky-500 text-white hover:bg-sky-600 transition-all duration-300 group rounded-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path d="M9 5l7 7-7 7" />
+            </svg>
+            Learn More
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+      <!-- Sustainability Section -->
+  <section 
+  class="py-20 bg-cover bg-center bg-no-repeat bg-gray-600 relative"
+  style="background-image: url('./bg-2.webp');"
+>
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-gradient-to-r from-green-900/80 via-teal-800/70 to-transparent"></div>
+  
+  <div class="container mx-auto px-4 md:px-10 lg:px-60 relative z-10">
+    <div class="max-w-2xl">
+      <h2 class="text-2xl md:text-4xl font-black text-white mb-8 leading-tight">
+        COMMITTED TO
+        <br />
+        <span class="text-sky-400">SUSTAINABILITY & SAFETY</span>
+      </h2>
+      
+      <div class="space-y-6 text-white/90 text-normal leading-relaxed mb-8">
+        <p>
+          At <strong>Nixon Arabia</strong>, sustainability is more than a responsibility—it is 
+          the foundation of everything we do. We actively implement safe, 
+          eco-friendly practices across all operations to minimize environmental 
+          impact and protect our people and communities. 
+        </p>
+        
+        <p>
+          Guided by our core values of <em>Integrity, Excellence, Innovation, 
+          and Sustainability</em>, we align with global best practices while 
+          ensuring compliance with international standards. Our goal is to deliver 
+          solutions that support long-term growth while preserving natural resources.
+        </p>
+      </div>
+      
+      <a 
+        href="#about"
+        class="inline-flex items-center px-6 py-3 text-lg font-medium bg-sky-500 text-white hover:bg-sky-600 transition-all duration-300 group rounded-lg"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+        Learn More About Our Values
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+      <!-- News Section -->
+   <section class="py-20 bg-white" id="news">
+  <div class="container mx-auto px-4 md:px-10 lg:px-40">
+    <!-- Title -->
+    <div class="text-center mb-16">
+      <div class="w-16 h-1 bg-sky-500 mx-auto mb-6"></div>
+      <h2 class="text-5xl md:text-6xl font-bold text-gray-800 mb-8">
+        LATEST NEWS
+      </h2>
+    </div>
+
+    <!-- News Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+      <!-- News Card 1 -->
+      <div class="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group cursor-pointer rounded-lg bg-white">
+        <div class="aspect-video bg-gray-200 relative overflow-hidden">
+          <div class="w-full h-full bg-gradient-to-br from-sky-500 to-blue-600 group-hover:scale-105 transition-transform duration-300"></div>
+          <div class="absolute inset-0 bg-black/20"></div>
+        </div>
+        
+        <div class="p-6">
+          <div class="flex gap-2 mb-4">
+            <span class="px-3 py-1 text-sm rounded bg-sky-500 text-white">Nixon Arabia</span>
+            <span class="px-3 py-1 text-sm rounded border border-sky-500 text-sky-500">Press Release</span>
+          </div>
+          
+          <h3 class="text-xl font-bold text-gray-800 mb-4 line-clamp-3 group-hover:text-sky-600 transition-colors">
+            Nixon Arabia Secures Major Marine Infrastructure Project in the GCC Region
+          </h3>
+        </div>
+      </div>
+
+      <!-- News Card 2 -->
+      <div class="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group cursor-pointer rounded-lg bg-white">
+        <div class="aspect-video bg-gray-200 relative overflow-hidden">
+          <div class="w-full h-full bg-gradient-to-br from-sky-500 to-blue-600 group-hover:scale-105 transition-transform duration-300"></div>
+          <div class="absolute inset-0 bg-black/20"></div>
+        </div>
+        
+        <div class="p-6">
+          <div class="flex gap-2 mb-4">
+            <span class="px-3 py-1 text-sm rounded bg-sky-500 text-white">Nixon Arabia</span>
+            <span class="px-3 py-1 text-sm rounded border border-sky-500 text-sky-500">Corporate Update</span>
+          </div>
+          
+          <h3 class="text-xl font-bold text-gray-800 mb-4 line-clamp-3 group-hover:text-sky-600 transition-colors">
+            Nixon Arabia Expands Services Portfolio with New Electrical & FRP Divisions
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA Button -->
+    <div class="text-center">
+      <a 
+        href="#"
+        class="inline-flex items-center px-6 py-3 text-lg font-medium border border-sky-500 text-sky-500 hover:bg-sky-500 hover:text-white transition-all duration-300 group rounded-lg"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 16h10M7 12h10" />
+        </svg>
+        Read More News
+      </a>
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <!-- Footer -->
+<footer class="bg-gray-800 text-white">
+  <div class="container mx-auto md:px-10 lg:px-40 px-4 py-16">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+      
+      <!-- Logo and Tagline -->
+      <div class="space-y-6">
+        <div class="flex items-center space-x-2">
+          <div class="text-white font-bold text-2xl tracking-wider">
+            <span class="text-sky-400">N</span>
+            <span class="text-white">A</span>
+          </div>
+          <div class="text-white text-sm font-light tracking-widest">
+            NIXON ARABIA
+          </div>
+        </div>
+        <p class="text-sm text-gray-300 leading-relaxed">
+          Delivering engineering, marine, civil, electrical, and fabrication solutions with 
+          integrity, innovation, and sustainability.
+        </p>
+
+        <!-- Social Links -->
+        <div class="flex space-x-4">
+          <a href="#" class="w-10 h-10 bg-sky-500 rounded-full flex items-center justify-center hover:bg-sky-600 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect width="4" height="12" x="2" y="9" rx="2"/><circle cx="4" cy="4" r="2"/>
+            </svg>
+          </a>
+          <a href="#" class="w-10 h-10 bg-sky-500 rounded-full flex items-center justify-center hover:bg-sky-600 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><circle cx="17.5" cy="6.5" r="0.5"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="space-y-4">
+        <h4 class="font-semibold text-lg mb-4">Quick Links</h4>
+        <nav class="flex flex-col space-y-3">
+          <a href="/about" class="text-gray-300 hover:text-sky-400 transition-colors">About Us</a>
+          <a href="/services" class="text-gray-300 hover:text-sky-400 transition-colors">Services</a>
+          <a href="/projects" class="text-gray-300 hover:text-sky-400 transition-colors">Projects</a>
+          <a href="/sustainability" class="text-gray-300 hover:text-sky-400 transition-colors">Sustainability</a>
+          <a href="/careers" class="text-gray-300 hover:text-sky-400 transition-colors">Careers</a>
+          <a href="/contact" class="text-gray-300 hover:text-sky-400 transition-colors">Contact</a>
+        </nav>
+      </div>
+
+      <!-- Services -->
+      <div class="space-y-4">
+        <h4 class="font-semibold text-lg mb-4">Our Services</h4>
+        <ul class="space-y-3 text-gray-300">
+          <li>Marine & Offshore</li>
+          <li>Civil Construction</li>
+          <li>Electrical Systems</li>
+          <li>FRP Fabrication</li>
+          <li>Manpower Supply</li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="space-y-4">
+        <h4 class="font-semibold text-lg mb-4">Contact Us</h4>
+        <p class="text-gray-300 text-sm">📍 Head Office, Saudi Arabia</p>
+        <p class="text-gray-300 text-sm">📧 <a href="mailto:info@nixonarabia.com" class="text-sky-400 hover:text-sky-300">info@nixonarabia.com</a></p>
+        <p class="text-gray-300 text-sm">📞 +966-XXX-XXXXXXX</p>
+      </div>
+    </div>
+
+    <div class="mt-12 pt-8 border-t border-white/20 text-center text-gray-400 text-sm">
+      <p>© 2025 Nixon Arabia. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+  </body>
+</html>

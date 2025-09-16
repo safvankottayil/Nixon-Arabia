@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-sky-700">
+  <div class="container bg-opacity-80 px-10 lg:px-40 mx-auto bg-black px-4">
+    <div class="flex items-center justify-between h-20">
+      <!-- Logo -->
+      <a href="/" class="flex items-center space-x-2">
+        <div class="text-white font-bold text-2xl tracking-wider">
+          <span class="text-sky-400">N</span>
+          <span class="text-white">A</span>
+        </div>
+        <div class="text-white text-sm font-light tracking-widest">
+          NIXON ARABIA
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden lg:flex items-center space-x-8">
+        <a href="/" class="text-white hover:text-sky-400 transition-colors">HOME</a>
+        <a href="#about" class="text-white hover:text-sky-400 transition-colors">ABOUT</a>
+        <a href="#services" class="text-white hover:text-sky-400 transition-colors">SERVICES</a>
+        <a href="#projects" class="text-white hover:text-sky-400 transition-colors">PROJECTS</a>
+        <a href="#careers" class="text-white hover:text-sky-400 transition-colors">CAREERS</a>
+        <a href="#contact" class="text-white hover:text-sky-400 transition-colors">CONTACT</a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" class="lg:hidden text-white hover:text-sky-400 focus:outline-none">
+        <!-- Menu Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" id="menu-icon" class="w-6 h-6 block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+        <!-- X Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" id="close-icon" class="w-6 h-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div id="mobile-menu" class="hidden lg:hidden py-4 border-t border-white/20">
+      <nav class="flex flex-col space-y-4">
+        <a href="/" class="text-white hover:text-sky-400 transition-colors">HOME</a>
+        <a href="#about" class="text-white hover:text-sky-400 transition-colors">ABOUT</a>
+        <a href="#services" class="text-white hover:text-sky-400 transition-colors">SERVICES</a>
+        <a href="#projects" class="text-white hover:text-sky-400 transition-colors">PROJECTS</a>
+        <a href="#careers" class="text-white hover:text-sky-400 transition-colors">CAREERS</a>
+        <a href="#contact" class="text-white hover:text-sky-400 transition-colors">CONTACT</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<script>
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const menuIcon = document.getElementById("menu-icon");
+  const closeIcon = document.getElementById("close-icon");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+    menuIcon.classList.toggle("hidden");
+    closeIcon.classList.toggle("hidden");
+  });
+</script>
+
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+ 
+
+   
+
+
+ 
+<!-- Hero Section -->
+<section 
+  class="relative h-screen bg-cover bg-center bg-no-repeat"
+  style="background-image: url('./career.png')"
+>
+  <!-- Dark overlay -->
+  <div class="absolute inset-0 bg-gray-900/70"></div>
+
+  <div class="relative z-10 container mx-auto px-4 h-full flex flex-col justify-end md:px-10 lg:px-40 py-32">
+    <!-- Breadcrumb -->
+    <div class="mb-8">
+      <div class="flex items-center font-bold space-x-2 text-white text-sm">
+        <span>HOME</span>
+        <span class="text-sky-400">/</span>
+        <span class="text-sky-400">CAREERS</span>
+      </div>
+    </div>
+    
+    <!-- Hero Title -->
+    <div class="max-w-3xl">
+      <h1 class="text-2xl md:text-5xl font-black text-white leading-tight mb-8">
+        SHAPE YOUR FUTURE <br />
+        WITH <span class="text-sky-400">NIXON ARABIA</span>
+      </h1>
+      <p class="text-xl font-medium text-white/90 max-w-2xl mb-6">
+        Join a team that thrives on trust, innovation, and sustainable solutions.  
+        At Nixon Arabia, we’re not just building infrastructure — we’re building careers,  
+        empowering talent, and creating opportunities to grow across marine, civil,  
+        electrical, FRP fabrication, and multi-disciplinary engineering sectors.
+      </p>
+      <a href="#open-positions" 
+         class="inline-block bg-sky-500 hover:bg-sky-600 text-white px-6 py-3 rounded-lg font-semibold shadow-md transition">
+        Explore Open Positions
+      </a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Job Listings Section -->
+<!-- Job Listings Section -->
+<section class="py-16">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold text-gray-900 mb-4">Open Positions</h2>
+      <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+        Discover exciting opportunities across our diverse business units
+      </p>
+    </div>
+
+    <!-- Jobs Grid (2 per row on md+) -->
+    <div class="grid gap-8 sm:grid-cols-2 max-w-6xl mx-auto">
+      
+      <!-- Job Card 1 -->
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition transform hover:-translate-y-1 p-8 space-y-6">
+        <!-- Header -->
+        <div class="flex justify-between items-start">
+          <div>
+            <h3 class="text-2xl font-bold text-gray-900">Marine Construction Engineer</h3>
+            <div class="flex flex-wrap gap-2 mt-3">
+              <span class="px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-sm font-medium">Construction</span>
+              <span class="px-3 py-1 rounded-full border border-gray-200 text-gray-700 text-sm">Full-time</span>
+            </div>
+          </div>
+          <button 
+            class="apply-btn bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white px-5 py-2 rounded-lg shadow-md transition"
+            data-title="Marine Construction Engineer"
+            data-location="Dubai, UAE"
+            data-department="Construction">
+            Apply Now
+          </button>
+        </div>
+
+        <!-- Meta -->
+        <div class="flex flex-wrap gap-6 text-sm text-gray-500 font-medium">
+          <div class="flex items-center gap-1">📍 Dubai, UAE</div>
+          <div class="flex items-center gap-1">📅 Posted 2 days ago</div>
+          <div class="text-blue-600 font-semibold">AED 15,000 - 25,000</div>
+        </div>
+
+        <!-- Description -->
+        <p class="text-gray-700 leading-relaxed">
+          Lead marine construction projects including breakwaters, piers, and offshore structures. 
+          Oversee diving operations and underwater installations.
+        </p>
+
+        <!-- Divider -->
+        <hr class="border-gray-200" />
+
+        <!-- Requirements -->
+        <div>
+          <h4 class="font-semibold text-gray-900 mb-3">Key Requirements</h4>
+          <ul class="list-disc list-inside space-y-1 text-gray-600">
+            <li>Bachelor's degree in Civil/Marine Engineering</li>
+            <li>5+ years experience in marine construction</li>
+            <li>Knowledge of underwater welding and diving operations</li>
+            <li>Project management certification preferred</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Job Card 2 -->
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition transform hover:-translate-y-1 p-8 space-y-6">
+        <!-- Header -->
+        <div class="flex justify-between items-start">
+          <div>
+            <h3 class="text-2xl font-bold text-gray-900">Civil Engineer</h3>
+            <div class="flex flex-wrap gap-2 mt-3">
+              <span class="px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-sm font-medium">Construction</span>
+              <span class="px-3 py-1 rounded-full border border-gray-200 text-gray-700 text-sm">Full-time</span>
+            </div>
+          </div>
+          <button 
+            class="apply-btn bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white px-5 py-2 rounded-lg shadow-md transition"
+            data-title="Civil Engineer"
+            data-location="Abu Dhabi, UAE"
+            data-department="Construction">
+            Apply Now
+          </button>
+        </div>
+
+        <!-- Meta -->
+        <div class="flex flex-wrap gap-6 text-sm text-gray-500 font-medium">
+          <div class="flex items-center gap-1">📍 Abu Dhabi, UAE</div>
+          <div class="flex items-center gap-1">📅 Posted 5 days ago</div>
+          <div class="text-blue-600 font-semibold">AED 12,000 - 20,000</div>
+        </div>
+
+        <!-- Description -->
+        <p class="text-gray-700 leading-relaxed">
+          Execute civil infrastructure projects including roads, bridges, and structural works. 
+          Ensure compliance and quality at all stages.
+        </p>
+
+        <!-- Divider -->
+        <hr class="border-gray-200" />
+
+        <!-- Requirements -->
+        <div>
+          <h4 class="font-semibold text-gray-900 mb-3">Key Requirements</h4>
+          <ul class="list-disc list-inside space-y-1 text-gray-600">
+            <li>Bachelor's degree in Civil Engineering</li>
+            <li>3+ years experience in civil construction</li>
+            <li>Knowledge of structural codes and standards</li>
+            <li>AutoCAD and project management skills</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+   <!-- Modal -->
+<!-- Modal -->
+<div id="applicationModal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+  <!-- Modal container -->
+  <div class="relative bg-white rounded-2xl shadow-lg w-full max-w-2xl mx-4 md:mx-6 lg:mx-10 p-8 overflow-y-auto max-h-[90vh]">
+
+    <!-- Close Button -->
+    <button id="closeModal" 
+      class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-xl">
+      ✖
+    </button>
+
+    <h2 class="text-2xl font-bold mb-2">Apply for Position</h2>
+    <p class="text-gray-600 mb-6">
+      <span id="jobTitle" class="font-semibold text-blue-600">Job Title</span><br>
+      <span id="jobMeta" class="text-sm text-gray-500">Department • Location</span>
+    </p>
+
+    <form class="space-y-6">
+      <!-- Job Position -->
+      <div>
+        <label class="block font-medium mb-1">Job Position</label>
+        <input id="jobInput" type="text" readonly
+          class="w-full rounded-lg bg-gray-100 border border-gray-200 p-3" />
+      </div>
+
+      <!-- Name -->
+      <div>
+        <label class="block font-medium mb-1">Full Name *</label>
+        <input type="text" placeholder="Enter your full name"
+          class="w-full rounded-lg border border-gray-300 p-3" />
+      </div>
+
+      <!-- Email & Phone -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <label class="block font-medium mb-1">Email *</label>
+          <input type="email" placeholder="your.email@example.com"
+            class="w-full rounded-lg border border-gray-300 p-3" />
+        </div>
+        <div>
+          <label class="block font-medium mb-1">Phone *</label>
+          <input type="tel" placeholder="+971 XX XXX XXXX"
+            class="w-full rounded-lg border border-gray-300 p-3" />
+        </div>
+      </div>
+
+      <!-- Resume Upload -->
+      <div>
+        <label class="block font-medium mb-1">Resume *</label>
+        <div class="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center">
+          <p class="text-sm text-gray-500 mb-2">Click to upload or drag and drop</p>
+          <p class="text-xs text-gray-400">PDF, DOC, DOCX (max 5MB)</p>
+          <input type="file" class="mt-2" />
+        </div>
+      </div>
+
+      <!-- Message -->
+      <div>
+        <label class="block font-medium mb-1">Cover Letter / Message *</label>
+        <textarea placeholder="Tell us why you're interested in this position..."
+          class="w-full rounded-lg border border-gray-300 p-3 min-h-[120px]"></textarea>
+      </div>
+
+      <!-- Buttons -->
+      <div class="flex justify-end gap-3">
+        <button type="button" id="cancelBtn"
+          class="px-4 py-2 rounded-lg border border-gray-300 text-gray-700">
+          Cancel
+        </button>
+        <button type="submit"
+          class="px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-700 text-white">
+          Submit Application
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+
+   <!-- Separate JS for modal -->
+  <script>
+    const modal = document.getElementById('applicationModal');
+    const closeModalBtn = document.getElementById('closeModal');
+    const cancelBtn = document.getElementById('cancelBtn');
+    const jobTitleEl = document.getElementById('jobTitle');
+    const jobMetaEl = document.getElementById('jobMeta');
+    const jobInputEl = document.getElementById('jobInput');
+
+    document.querySelectorAll('.apply-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        const title = button.getAttribute('data-title');
+        const location = button.getAttribute('data-location');
+        const department = button.getAttribute('data-department');
+
+        jobTitleEl.textContent = title;
+        jobMetaEl.textContent = `${department} • ${location}`;
+        jobInputEl.value = title;
+
+        modal.classList.remove('hidden');
+      });
+    });
+
+    [closeModalBtn, cancelBtn].forEach(btn => {
+      btn.addEventListener('click', () => {
+        modal.classList.add('hidden');
+      });
+    });
+  </script>
+
+
+
+</main>
+
+
+<footer class="bg-gray-800 text-white">
+  <div class="container mx-auto md:px-10 lg:px-40 px-4 py-16">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+      
+      <!-- Logo and Tagline -->
+      <div class="space-y-6">
+        <div class="flex items-center space-x-2">
+          <div class="text-white font-bold text-2xl tracking-wider">
+            <span class="text-sky-400">N</span>
+            <span class="text-white">A</span>
+          </div>
+          <div class="text-white text-sm font-light tracking-widest">
+            NIXON ARABIA
+          </div>
+        </div>
+        <p class="text-sm text-gray-300 leading-relaxed">
+          Delivering engineering, marine, civil, electrical, and fabrication solutions with 
+          integrity, innovation, and sustainability.
+        </p>
+
+        <!-- Social Links -->
+        <div class="flex space-x-4">
+          <a href="#" class="w-10 h-10 bg-sky-500 rounded-full flex items-center justify-center hover:bg-sky-600 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect width="4" height="12" x="2" y="9" rx="2"/><circle cx="4" cy="4" r="2"/>
+            </svg>
+          </a>
+          <a href="#" class="w-10 h-10 bg-sky-500 rounded-full flex items-center justify-center hover:bg-sky-600 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><circle cx="17.5" cy="6.5" r="0.5"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="space-y-4">
+        <h4 class="font-semibold text-lg mb-4">Quick Links</h4>
+        <nav class="flex flex-col space-y-3">
+          <a href="/about" class="text-gray-300 hover:text-sky-400 transition-colors">About Us</a>
+          <a href="/services" class="text-gray-300 hover:text-sky-400 transition-colors">Services</a>
+          <a href="/projects" class="text-gray-300 hover:text-sky-400 transition-colors">Projects</a>
+          <a href="/sustainability" class="text-gray-300 hover:text-sky-400 transition-colors">Sustainability</a>
+          <a href="/careers" class="text-gray-300 hover:text-sky-400 transition-colors">Careers</a>
+          <a href="/contact" class="text-gray-300 hover:text-sky-400 transition-colors">Contact</a>
+        </nav>
+      </div>
+
+      <!-- Services -->
+      <div class="space-y-4">
+        <h4 class="font-semibold text-lg mb-4">Our Services</h4>
+        <ul class="space-y-3 text-gray-300">
+          <li>Marine & Offshore</li>
+          <li>Civil Construction</li>
+          <li>Electrical Systems</li>
+          <li>FRP Fabrication</li>
+          <li>Manpower Supply</li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="space-y-4">
+        <h4 class="font-semibold text-lg mb-4">Contact Us</h4>
+        <p class="text-gray-300 text-sm">📍 Head Office, Saudi Arabia</p>
+        <p class="text-gray-300 text-sm">📧 <a href="mailto:info@nixonarabia.com" class="text-sky-400 hover:text-sky-300">info@nixonarabia.com</a></p>
+        <p class="text-gray-300 text-sm">📞 +966-XXX-XXXXXXX</p>
+      </div>
+    </div>
+
+    <div class="mt-12 pt-8 border-t border-white/20 text-center text-gray-400 text-sm">
+      <p>© 2025 Nixon Arabia. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>

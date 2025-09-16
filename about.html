@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-sky-700">
+  <div class="container bg-opacity-80 px-10 lg:px-40 mx-auto bg-black px-4">
+    <div class="flex items-center justify-between h-20">
+      <!-- Logo -->
+      <a href="/" class="flex items-center space-x-2">
+        <div class="text-white font-bold text-2xl tracking-wider">
+          <span class="text-sky-400">N</span>
+          <span class="text-white">A</span>
+        </div>
+        <div class="text-white text-sm font-light tracking-widest">
+          NIXON ARABIA
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden lg:flex items-center space-x-8">
+        <a href="/" class="text-white hover:text-sky-400 transition-colors">HOME</a>
+        <a href="#about" class="text-white hover:text-sky-400 transition-colors">ABOUT</a>
+        <a href="#services" class="text-white hover:text-sky-400 transition-colors">SERVICES</a>
+        <a href="#projects" class="text-white hover:text-sky-400 transition-colors">PROJECTS</a>
+        <a href="#careers" class="text-white hover:text-sky-400 transition-colors">CAREERS</a>
+        <a href="#contact" class="text-white hover:text-sky-400 transition-colors">CONTACT</a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" class="lg:hidden text-white hover:text-sky-400 focus:outline-none">
+        <!-- Menu Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" id="menu-icon" class="w-6 h-6 block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+        <!-- X Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" id="close-icon" class="w-6 h-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div id="mobile-menu" class="hidden lg:hidden py-4 border-t border-white/20">
+      <nav class="flex flex-col space-y-4">
+        <a href="/" class="text-white hover:text-sky-400 transition-colors">HOME</a>
+        <a href="#about" class="text-white hover:text-sky-400 transition-colors">ABOUT</a>
+        <a href="#services" class="text-white hover:text-sky-400 transition-colors">SERVICES</a>
+        <a href="#projects" class="text-white hover:text-sky-400 transition-colors">PROJECTS</a>
+        <a href="#careers" class="text-white hover:text-sky-400 transition-colors">CAREERS</a>
+        <a href="#contact" class="text-white hover:text-sky-400 transition-colors">CONTACT</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<script>
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const menuIcon = document.getElementById("menu-icon");
+  const closeIcon = document.getElementById("close-icon");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+    menuIcon.classList.toggle("hidden");
+    closeIcon.classList.toggle("hidden");
+  });
+</script>
+
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+ 
+
+   
+
+
+ 
+<!-- Hero Section -->
+<section 
+  class="relative h-screen bg-cover bg-center bg-no-repeat"
+  style="background-image: url('./about.jpg')"
+>
+  <!-- Dark overlay -->
+  <div class="absolute inset-0 bg-gray-900/70"></div>
+
+  <div class="relative z-10 container mx-auto px-4 h-full flex flex-col justify-end md:px-10 lg:px-40 py-32">
+    <!-- Breadcrumb -->
+    <div class="mb-8">
+      <div class="flex items-center font-bold space-x-2 text-white text-sm">
+        <span>HOME</span>
+        <span class="text-sky-400">/</span>
+        <span class="text-sky-400">ABOUT US</span>
+      </div>
+    </div>
+    
+    <!-- Hero Title -->
+    <div class="max-w-3xl">
+      <h1 class="text-2xl md:text-5xl font-black text-white leading-tight mb-8">
+        BUILDING <br />
+        <span class="text-sky-400">TRUST, INNOVATION,</span> <br />
+        AND SUSTAINABLE SOLUTIONS
+      </h1>
+      <p class="text-xl font-medium text-white/90 max-w-2xl">
+        Nixon Arabia is a multi-disciplinary company delivering engineering, marine, 
+        civil, electrical, FRP fabrication, and manpower solutions across the region.  
+        With a strong focus on quality, safety, and sustainability, we continue to 
+        support the growth of industries and communities.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<!-- Our Story Section -->
+<section class="py-20 bg-gray-50 relative">
+  <div class="absolute top-0 right-0 w-1/2 h-full">
+    <div class="w-full h-full bg-gradient-to-l from-sky-100/40 to-transparent transform skew-y-3"></div>
+  </div>
+  
+  <div class="container mx-auto px-4 md:px-10 lg:px-40 relative z-10">
+    
+    <!-- Section Header -->
+    <div class="text-center mb-12 max-w-3xl mx-auto">
+      <h2 class="text-5xl font-bold text-gray-800 mb-6">OUR STORY</h2>
+      <p class="text-lg text-gray-600 leading-relaxed">
+        Since our foundation, Nixon Arabia has grown from a regional 
+        marine and construction provider into a multi-disciplinary 
+        group serving clients across engineering, civil, electrical, 
+        fabrication, and manpower services. Here’s a look at some of 
+        the milestones that shaped our journey.
+      </p>
+    </div>
+
+    <!-- Timeline -->
+    <div class="relative mt-16">
+      <!-- Vertical Line -->
+      <div class="absolute left-[33%] md:left-[32.5%] top-0 bottom-0 w-0.5 bg-gray-300"></div>
+
+      <!-- Item 1 -->
+      <div class="mb-10 flex items-start">
+        <div class="w-1/3 text-right pr-6">
+          <span class="text-xl font-bold text-sky-600">2015</span>
+        </div>
+        <div class="relative z-10">
+          <div class="w-4 h-4 bg-sky-500 rounded-full border-4 border-white shadow"></div>
+        </div>
+        <div class="w-2/3 pl-6">
+          <h3 class="font-bold text-gray-900">Foundation of Nixon Arabia</h3>
+          <p class="text-gray-600">Established as a regional service provider focusing on marine and construction solutions.</p>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="mb-10 flex items-start">
+        <div class="w-1/3 text-right pr-6">
+          <span class="text-xl font-bold text-sky-600">2018</span>
+        </div>
+        <div class="relative z-10">
+          <div class="w-4 h-4 bg-sky-500 rounded-full border-4 border-white shadow"></div>
+        </div>
+        <div class="w-2/3 pl-6">
+          <h3 class="font-bold text-gray-900">Expansion into Civil & Electrical Works</h3>
+          <p class="text-gray-600">Broadened services to include infrastructure, roads, bridges, and electrical contracting.</p>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="mb-10 flex items-start">
+        <div class="w-1/3 text-right pr-6">
+          <span class="text-xl font-bold text-sky-600">2021</span>
+        </div>
+        <div class="relative z-10">
+          <div class="w-4 h-4 bg-sky-500 rounded-full border-4 border-white shadow"></div>
+        </div>
+        <div class="w-2/3 pl-6">
+          <h3 class="font-bold text-gray-900">FRP & Fabrication Division</h3>
+          <p class="text-gray-600">Launched specialized fiberglass and fabrication services to serve industrial clients.</p>
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="mb-10 flex items-start">
+        <div class="w-1/3 text-right pr-6">
+          <span class="text-xl font-bold text-sky-600">2024</span>
+        </div>
+        <div class="relative z-10">
+          <div class="w-4 h-4 bg-sky-500 rounded-full border-4 border-white shadow"></div>
+        </div>
+        <div class="w-2/3 pl-6">
+          <h3 class="font-bold text-gray-900">Regional Growth</h3>
+          <p class="text-gray-600">Expanded operations across the GCC, supporting energy, marine, and infrastructure projects.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- CEO Message Section -->
+<section class="py-20 bg-white">
+  <div class="container md:px-10 lg:px-40 mx-auto px-4">
+    <div class="max-w-6xl mx-auto">
+      <div class="p-8 bg-gradient-to-r from-sky-600 to-sky-800 rounded-3xl overflow-hidden">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          
+          <!-- Message -->
+          <div class="space-y-6">
+            <blockquote class="text-2xl text-white leading-relaxed">
+              "At Nixon Arabia, we believe in building lasting partnerships, 
+              delivering innovative solutions, and driving sustainable growth 
+              across every project we undertake."
+            </blockquote>
+            <a href="#about" 
+               class="inline-flex items-center border border-white text-white hover:bg-white hover:text-sky-800 px-4 py-2 rounded-md transition-all duration-300">
+              <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M4 4h16v16H4z" stroke="none"/><path d="M4 4l8 8 8-8"/>
+              </svg>
+              Read the CEO’s Message
+            </a>
+          </div>
+          
+          <!-- CEO Image -->
+          <div class="flex justify-center lg:justify-end">
+            <img 
+              src="/images/ceo.jpg" 
+              alt="CEO of Nixon Arabia"
+              class="w-48 h-48 object-cover rounded-2xl border-4 border-white/30 shadow-lg"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Purpose, Vision, Mission Section -->
+<section class="py-20 bg-gray-50">
+  <div class="container md:px-10 lg:px-40 mx-auto px-4">
+    <div class="grid grid-cols-1 bg-sky-100/60 p-20 rounded-xl lg:grid-cols-2 gap-16 max-w-6xl mx-auto">
+      
+      <!-- Left Column -->
+      <div class="space-y-12">
+        <div>
+          <h3 class="text-4xl font-bold text-sky-800 mb-6">PURPOSE</h3>
+          <p class="text-xl text-gray-700 leading-relaxed">
+            To empower industries and communities by delivering 
+            reliable, sustainable, and innovative solutions across 
+            engineering and infrastructure.
+          </p>
+        </div>
+        
+        <div>
+          <h3 class="text-4xl font-bold text-sky-800 mb-6">VISION</h3>
+          <p class="text-xl text-gray-700 leading-relaxed">
+            To be a trusted regional leader in multi-disciplinary 
+            services, recognized for integrity, innovation, and 
+            sustainable growth.
+          </p>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div>
+        <h3 class="text-3xl font-bold text-sky-800 mb-6">MISSION</h3>
+        <div class="space-y-6">
+          <div class="flex items-start space-x-3">
+            <div class="w-2 h-6 bg-sky-500 rounded mt-1 flex-shrink-0"></div>
+            <p class="text-lg text-gray-700">
+              To deliver high-quality marine, civil, electrical, and 
+              fabrication services with a commitment to safety and 
+              sustainability.
+            </p>
+          </div>
+          
+          <div class="flex items-start space-x-3">
+            <div class="w-2 h-6 bg-sky-500 rounded mt-1 flex-shrink-0"></div>
+            <p class="text-lg text-gray-700">
+              To foster long-term partnerships with clients through 
+              reliable, cost-efficient, and innovative solutions.
+            </p>
+          </div>
+          
+          <div class="flex items-start space-x-3">
+            <div class="w-2 h-6 bg-sky-500 rounded mt-1 flex-shrink-0"></div>
+            <p class="text-lg text-gray-700">
+              To nurture talent, encourage innovation, and create 
+              rewarding opportunities for our people.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Values Section -->
+<section class="py-20 relative overflow-hidden">
+  <div class="absolute inset-0"></div>
+  
+  <div class="container md:px-10 lg:px-40 mx-auto px-4 relative z-10">
+    <div class="grid grid-cols-1 px-20 py-10 mx-5 rounded-lg bg-black/80 lg:grid-cols-2 gap-16 items-center">
+      
+      <!-- Left Column -->
+      <div class="text-white">
+        <h2 class="text-3xl font-bold mb-8">OUR VALUES</h2>
+        <p class="text-lg leading-relaxed mb-8 text-white/90">
+          At Nixon Arabia, our values guide every project and 
+          partnership. We are committed to delivering solutions 
+          that balance quality, safety, and innovation while 
+          creating sustainable value for our clients, people, and 
+          communities.
+        </p>
+      </div>
+      
+      <!-- Right Column -->
+      <div class="space-y-4">
+        <div class="flex items-center space-x-4">
+          <div class="w-2 h-8 bg-sky-500 rounded flex-shrink-0"></div>
+          <span class="text-2xl font-bold text-white">Integrity</span>
+        </div>
+        <div class="flex items-center space-x-4">
+          <div class="w-2 h-8 bg-sky-500 rounded flex-shrink-0"></div>
+          <span class="text-2xl font-bold text-white">Excellence</span>
+        </div>
+        <div class="flex items-center space-x-4">
+          <div class="w-2 h-8 bg-sky-500 rounded flex-shrink-0"></div>
+          <span class="text-2xl font-bold text-white">Innovation</span>
+        </div>
+        <div class="flex items-center space-x-4">
+          <div class="w-2 h-8 bg-sky-500 rounded flex-shrink-0"></div>
+          <span class="text-2xl font-bold text-white">Sustainability</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Bottom Cards Section -->
+<section class="py-20 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+      
+      <!-- Regional Presence -->
+      <div class="overflow-hidden border-0 shadow-lg group hover:shadow-xl transition-all duration-300 rounded-lg bg-white">
+        <div class="h-48 bg-gradient-to-br from-teal-400 to-blue-500"></div>
+        <div class="p-6">
+          <h3 class="text-2xl font-bold text-sky-800 mb-4">REGIONAL PRESENCE</h3>
+          <p class="text-gray-600 mb-6 leading-relaxed">
+            Nixon Arabia is proudly headquartered in Saudi Arabia, 
+            with operations extending across the Middle East and 
+            international partnerships that strengthen our service 
+            capabilities in engineering, marine, civil, and energy sectors.
+          </p>
+          <a href="#" class="inline-flex items-center text-sky-600 hover:text-sky-800 font-semibold">
+            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M9 5l7 7-7 7" />
+            </svg>
+            Read More
+          </a>
+        </div>
+      </div>
+
+      <!-- Leadership -->
+      <div class="overflow-hidden border-0 shadow-lg group hover:shadow-xl transition-all duration-300 rounded-lg bg-white">
+        <div class="h-48 bg-gradient-to-br from-orange-400 to-pink-500"></div>
+        <div class="p-6">
+          <h3 class="text-2xl font-bold text-sky-800 mb-4">LEADERSHIP</h3>
+          <p class="text-gray-600 mb-6 leading-relaxed">
+            Guided by a strong leadership team with decades of 
+            industry expertise, Nixon Arabia is driven by a clear 
+            vision: to deliver innovative and sustainable solutions 
+            while maintaining the highest standards of integrity 
+            and performance.
+          </p>
+          <a href="#" class="inline-flex items-center text-sky-600 hover:text-sky-800 font-semibold">
+            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M9 5l7 7-7 7" />
+            </svg>
+            Read More
+          </a>
+        </div>
+      </div>
+
+      <!-- Our People & Culture -->
+      <div class="overflow-hidden border-0 shadow-lg group hover:shadow-xl transition-all duration-300 rounded-lg bg-white">
+        <div class="h-48 bg-gradient-to-br from-gray-600 to-gray-800"></div>
+        <div class="p-6">
+          <h3 class="text-2xl font-bold text-sky-800 mb-4">OUR PEOPLE & CULTURE</h3>
+          <p class="text-gray-600 mb-6 leading-relaxed">
+            At the heart of Nixon Arabia is a culture built on respect, 
+            collaboration, and diversity. Our workforce represents 
+            multiple nationalities and skillsets, united by a shared 
+            commitment to innovation, safety, and excellence.
+          </p>
+          <a href="#" class="inline-flex items-center text-sky-600 hover:text-sky-800 font-semibold">
+            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M9 5l7 7-7 7" />
+            </svg>
+            Read More
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+</main>
+
+
+<footer class="bg-gray-800 text-white">
+  <div class="container mx-auto md:px-10 lg:px-40 px-4 py-16">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+      
+      <!-- Logo and Tagline -->
+      <div class="space-y-6">
+        <div class="flex items-center space-x-2">
+          <div class="text-white font-bold text-2xl tracking-wider">
+            <span class="text-sky-400">N</span>
+            <span class="text-white">A</span>
+          </div>
+          <div class="text-white text-sm font-light tracking-widest">
+            NIXON ARABIA
+          </div>
+        </div>
+        <p class="text-sm text-gray-300 leading-relaxed">
+          Delivering engineering, marine, civil, electrical, and fabrication solutions with 
+          integrity, innovation, and sustainability.
+        </p>
+
+        <!-- Social Links -->
+        <div class="flex space-x-4">
+          <a href="#" class="w-10 h-10 bg-sky-500 rounded-full flex items-center justify-center hover:bg-sky-600 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect width="4" height="12" x="2" y="9" rx="2"/><circle cx="4" cy="4" r="2"/>
+            </svg>
+          </a>
+          <a href="#" class="w-10 h-10 bg-sky-500 rounded-full flex items-center justify-center hover:bg-sky-600 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><circle cx="17.5" cy="6.5" r="0.5"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="space-y-4">
+        <h4 class="font-semibold text-lg mb-4">Quick Links</h4>
+        <nav class="flex flex-col space-y-3">
+          <a href="/about" class="text-gray-300 hover:text-sky-400 transition-colors">About Us</a>
+          <a href="/services" class="text-gray-300 hover:text-sky-400 transition-colors">Services</a>
+          <a href="/projects" class="text-gray-300 hover:text-sky-400 transition-colors">Projects</a>
+          <a href="/sustainability" class="text-gray-300 hover:text-sky-400 transition-colors">Sustainability</a>
+          <a href="/careers" class="text-gray-300 hover:text-sky-400 transition-colors">Careers</a>
+          <a href="/contact" class="text-gray-300 hover:text-sky-400 transition-colors">Contact</a>
+        </nav>
+      </div>
+
+      <!-- Services -->
+      <div class="space-y-4">
+        <h4 class="font-semibold text-lg mb-4">Our Services</h4>
+        <ul class="space-y-3 text-gray-300">
+          <li>Marine & Offshore</li>
+          <li>Civil Construction</li>
+          <li>Electrical Systems</li>
+          <li>FRP Fabrication</li>
+          <li>Manpower Supply</li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="space-y-4">
+        <h4 class="font-semibold text-lg mb-4">Contact Us</h4>
+        <p class="text-gray-300 text-sm">📍 Head Office, Saudi Arabia</p>
+        <p class="text-gray-300 text-sm">📧 <a href="mailto:info@nixonarabia.com" class="text-sky-400 hover:text-sky-300">info@nixonarabia.com</a></p>
+        <p class="text-gray-300 text-sm">📞 +966-XXX-XXXXXXX</p>
+      </div>
+    </div>
+
+    <div class="mt-12 pt-8 border-t border-white/20 text-center text-gray-400 text-sm">
+      <p>© 2025 Nixon Arabia. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>
