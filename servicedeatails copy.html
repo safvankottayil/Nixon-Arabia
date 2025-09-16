@@ -8,7 +8,7 @@
 </head>
 <body class="bg-gray-50 text-gray-800">
 
- <header class="fixed top-0 left-0 right-0 z-50 bg-sky-700">
+  <header class="fixed top-0 left-0 right-0 z-50 bg-sky-700">
   <div class="container bg-opacity-80 px-10 lg:px-40 mx-auto bg-black px-4">
     <div class="flex items-center justify-between h-20">
       <!-- Logo -->
@@ -61,12 +61,12 @@
 
 
   <main class="pt-20">
-<!-- Hero Section -->
+<!-- Service Hero Section -->
 <section class="relative h-96">
   <!-- Background Image -->
   <div 
     class="absolute inset-0 bg-cover bg-center"
-    style="background-image: url('./PROJECT.webp');"
+    style="background-image: url('./SERVICE.webp');"
   ></div>
 
   <!-- Blue Gradient Overlay -->
@@ -75,119 +75,139 @@
   <!-- Content -->
   <div class="relative container md:px-10 lg:px-40 mx-auto px-6 h-full flex items-center">
     <div class="text-white">
-      <a href="/projects" class="inline-flex items-center gap-2 mb-4 text-white/80 hover:text-white">
-        ← Back to Projects
-      </a>
-      <h1 class="text-2xl md:text-4xl font-bold max-w-xl mb-4">
-        Al Maktoum International Airport Expansion
+      <!-- Breadcrumb -->
+      <div class="flex items-center font-bold space-x-2 text-sm mb-4">
+        <a href="/" class="text-white/80 hover:text-white">HOME</a>
+        <span class="text-sky-400">/</span>
+        <a href="/services" class="text-sky-400 hover:text-white">SERVICES</a>
+      </div>
+
+      <!-- Title -->
+      <h1 class="text-2xl md:text-4xl font-bold max-w-2xl mb-4">
+        Infrastructure Development
       </h1>
+
+      <!-- Tags -->
       <div class="flex flex-wrap gap-2">
-        <span class="bg-white/20 backdrop-blur px-3 py-1 rounded-full text-sm">In Progress</span>
+        <span class="bg-white/20 backdrop-blur px-3 py-1 rounded-full text-sm">Construction</span>
         <span class="border border-white text-white px-3 py-1 rounded-full text-sm">Infrastructure</span>
-        <span class="border border-white text-white px-3 py-1 rounded-full text-sm">Aviation</span>
+        <span class="border border-white text-white px-3 py-1 rounded-full text-sm">Urban Planning</span>
       </div>
     </div>
   </div>
 </section>
 
+<!-- Service Detail Section -->
+<section class="py-16">
+  <div class="container md:px-10 lg:px-40 mx-auto px-4">
+    <div class="grid lg:grid-cols-3 gap-8">
 
-    <!-- Project Details -->
-    <section class="py-16">
-      <div class="container md:px-10 lg:px-40 mx-auto px-6 grid lg:grid-cols-3 gap-8">
-        
-        <!-- Main Content -->
-        <div class="lg:col-span-2">
-          <div class="bg-white rounded-xl shadow p-8">
-            <h2 class="text-2xl font-bold mb-6">Project Overview</h2>
-            <p class="text-gray-600 mb-8 leading-relaxed">
-              This major infrastructure project involves the expansion of Al Maktoum International Airport 
-              to support Dubai's position as a global aviation hub. The project includes the construction 
-              of new passenger terminals, cargo facilities, and runway extensions.
-            </p>
+      <!-- Main Content -->
+      <div class="lg:col-span-2 space-y-8">
 
-            <h3 class="text-xl font-semibold mb-4">Project Scope</h3>
-            <ul class="space-y-2 mb-8 text-gray-700">
-              <li class="flex items-start gap-2">
-                <div class="w-2 h-2 mt-2 rounded-full bg-sky-600"></div>
-                Construction of 3 new passenger terminals
-              </li>
-              <li class="flex items-start gap-2">
-                <div class="w-2 h-2 mt-2 rounded-full bg-sky-600"></div>
-                Extension of existing runways
-              </li>
-              <li class="flex items-start gap-2">
-                <div class="w-2 h-2 mt-2 rounded-full bg-sky-600"></div>
-                Development of cargo handling facilities
-              </li>
-              <li class="flex items-start gap-2">
-                <div class="w-2 h-2 mt-2 rounded-full bg-sky-600"></div>
-                Installation of advanced air traffic control systems
-              </li>
-              <li class="flex items-start gap-2">
-                <div class="w-2 h-2 mt-2 rounded-full bg-sky-600"></div>
-                Sustainable infrastructure implementation
-              </li>
-            </ul>
-
-            <h3 class="text-xl font-semibold mb-4">Key Challenges</h3>
-            <ul class="space-y-2 text-gray-700">
-              <li class="flex items-start gap-2">
-                <div class="w-2 h-2 mt-2 rounded-full bg-orange-500"></div>
-                Maintaining airport operations during construction
-              </li>
-              <li class="flex items-start gap-2">
-                <div class="w-2 h-2 mt-2 rounded-full bg-orange-500"></div>
-                Coordinating with multiple stakeholders
-              </li>
-              <li class="flex items-start gap-2">
-                <div class="w-2 h-2 mt-2 rounded-full bg-orange-500"></div>
-                Implementing sustainable building practices
-              </li>
-              <li class="flex items-start gap-2">
-                <div class="w-2 h-2 mt-2 rounded-full bg-orange-500"></div>
-                Managing large-scale logistics
-              </li>
-            </ul>
-          </div>
+        <!-- Service Overview -->
+        <div class="bg-white rounded-xl shadow p-8">
+          <h2 class="text-2xl font-bold mb-4">Service Overview</h2>
+          <p class="text-gray-600 leading-relaxed">
+            Our infrastructure development services encompass the full spectrum of construction and engineering solutions. From initial planning and design to construction and maintenance, we deliver world-class infrastructure projects that drive economic growth and improve quality of life.
+          </p>
         </div>
 
-        <!-- Sidebar -->
-        <div class="space-y-6">
-          <div class="bg-white rounded-xl shadow p-6">
-            <h3 class="font-semibold mb-4">Project Information</h3>
-            <div class="space-y-4 text-sm">
-              <div>
-                <p class="text-gray-500">📍 Location</p>
-                <p class="font-medium">Dubai, UAE</p>
-              </div>
-              <div>
-                <p class="text-gray-500">👤 Client</p>
-                <p class="font-medium">Dubai Aviation Authority</p>
-              </div>
-              <div>
-                <p class="text-gray-500">🏢 Budget</p>
-                <p class="font-medium">$2.5 Billion</p>
-              </div>
-              <div>
-                <p class="text-gray-500">📅 Timeline</p>
-                <p class="font-medium">2023 - 2025</p>
-              </div>
+        <!-- Capabilities -->
+        <div class="bg-white rounded-xl shadow p-8">
+          <h2 class="text-2xl font-bold mb-2">Our Capabilities</h2>
+          <p class="text-gray-500 mb-6">Comprehensive solutions tailored to your needs</p>
+          <div class="grid md:grid-cols-2 gap-4">
+            <div class="flex items-start gap-3">
+              <div class="w-5 h-5 text-sky-600 mt-1">✔</div>
+              <span class="text-gray-600">Road and Highway Construction</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="w-5 h-5 text-sky-600 mt-1">✔</div>
+              <span class="text-gray-600">Bridge and Tunnel Engineering</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="w-5 h-5 text-sky-600 mt-1">✔</div>
+              <span class="text-gray-600">Urban Planning and Development</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="w-5 h-5 text-sky-600 mt-1">✔</div>
+              <span class="text-gray-600">Smart City Infrastructure</span>
             </div>
           </div>
+        </div>
 
-          <div class="bg-white rounded-xl shadow p-6">
-            <h3 class="font-semibold mb-4">Interested in Similar Projects?</h3>
-            <p class="text-sm text-gray-600 mb-4">
-              Contact us to discuss your infrastructure development needs.
-            </p>
-            <a href="/contact" 
-               class="block text-center bg-sky-600 hover:bg-sky-700 text-white font-medium py-3 px-6 rounded-lg">
-              Get in Touch
-            </a>
-          </div>
+        <!-- Key Benefits -->
+        <div class="bg-white rounded-xl shadow p-8">
+          <h2 class="text-2xl font-bold mb-2">Key Benefits</h2>
+          <p class="text-gray-500 mb-6">Value delivered through our services</p>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-3">
+              <div class="w-2 h-2 rounded-full bg-sky-600 mt-2"></div>
+              <span class="text-gray-600">Enhanced connectivity and accessibility</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="w-2 h-2 rounded-full bg-sky-600 mt-2"></div>
+              <span class="text-gray-600">Economic development and job creation</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="w-2 h-2 rounded-full bg-sky-600 mt-2"></div>
+              <span class="text-gray-600">Improved quality of life for communities</span>
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
+
+      <!-- Sidebar -->
+      <div class="space-y-6">
+
+        <!-- Related Projects -->
+        <div class="bg-white rounded-xl shadow p-6">
+          <h3 class="font-semibold mb-4">Related Projects</h3>
+          <div class="space-y-4">
+            <div class="border-l-4 border-sky-600 pl-4">
+              <h4 class="font-semibold">Dubai Metro Expansion</h4>
+              <p class="text-sm text-gray-500">Dubai, UAE</p>
+              <span class="inline-block mt-1 border border-gray-300 text-xs px-2 py-0.5 rounded">Completed</span>
+            </div>
+            <div class="border-l-4 border-sky-600 pl-4">
+              <h4 class="font-semibold">Al Maktoum Airport Road Network</h4>
+              <p class="text-sm text-gray-500">Dubai, UAE</p>
+              <span class="inline-block mt-1 border border-gray-300 text-xs px-2 py-0.5 rounded">In Progress</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Get Started -->
+        <div class="bg-white rounded-xl shadow p-6">
+          <h3 class="font-semibold mb-4">Get Started</h3>
+          <p class="text-sm text-gray-500 mb-4">
+            Ready to discuss your project requirements? Contact our experts for a consultation.
+          </p>
+          <div class="space-y-3">
+            <a href="/contact" class="block w-full text-center bg-sky-600 hover:bg-sky-700 text-white py-2 rounded-lg">Request Quote</a>
+            <a href="/projects" class="block w-full text-center border border-gray-300 hover:bg-gray-100 text-gray-700 py-2 rounded-lg">View Projects</a>
+          </div>
+        </div>
+
+        <!-- Service Categories -->
+        <div class="bg-white rounded-xl shadow p-6">
+          <h3 class="font-semibold mb-4">Service Categories</h3>
+          <div class="space-y-2">
+            <a href="/services/infrastructure-development" class="block p-2 rounded hover:bg-gray-100">Infrastructure Development</a>
+            <a href="/services/aviation-services" class="block p-2 rounded hover:bg-gray-100">Aviation Services</a>
+            <a href="/services/marine-operations" class="block p-2 rounded hover:bg-gray-100">Marine Operations</a>
+            <a href="/services/energy-solutions" class="block p-2 rounded hover:bg-gray-100">Energy Solutions</a>
+            <a href="/services/maintenance-services" class="block p-2 rounded hover:bg-gray-100">Maintenance Services</a>
+            <a href="/services/consulting-services" class="block p-2 rounded hover:bg-gray-100">Consulting Services</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
   </main>
 
   <!-- Footer -->
